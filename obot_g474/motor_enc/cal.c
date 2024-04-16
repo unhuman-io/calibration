@@ -7,7 +7,7 @@ Calibration __attribute__((section("calibration_data"))) initial_calibration = {
     .motor_encoder_bias = 0,
     .motor_encoder_index_electrical_offset_pos = -22643,
     .output_encoder_bias = 0,
-    .torque_sensor_bias = 0,
+    .torque_sensor.bias = 0,
     .joint_encoder_bias = 0,
     .error_mask.all = ERROR_MASK_ALL
 };
