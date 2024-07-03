@@ -9,5 +9,5 @@ Calibration __attribute__((section("calibration_data"))) initial_calibration = {
     .output_encoder_bias = 0,
     .torque_sensor.bias = 0,
     .joint_encoder_bias = 0,
-    .error_mask.all = ERROR_MASK_ALL
+    .error_mask.all = ERROR_MASK_ALL & ~ERROR_MASK_INIT_FAILURE
 };
